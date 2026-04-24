@@ -1,0 +1,58 @@
+{
+  "name": "rivium-push-react-native-voip",
+  "version": "0.1.0",
+  "description": "VoIP call handling for React Native with native incoming call UI (Android CallStyle, iOS CallKit)",
+  "main": "src/index.ts",
+  "types": "src/index.d.ts",
+  "react-native": "src/index.ts",
+  "source": "src/index.ts",
+  "files": [
+    "src",
+    "android",
+    "ios",
+    "rivium-push-react-native-voip.podspec",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__",
+    "!**/.*"
+  ],
+  "scripts": {
+    "typescript": "tsc --noEmit",
+    "lint": "eslint \"**/*.{js,ts,tsx}\"",
+    "clean": "rm -rf node_modules"
+  },
+  "keywords": [
+    "react-native",
+    "voip",
+    "callkit",
+    "incoming-call",
+    "push-notifications",
+    "rivium-push",
+    "ios",
+    "android"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rivium-co/rivium-push-voip-react-native-sdk.git"
+  },
+  "author": "Rivium <support@rivium.co>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Rivium-co/rivium-push-voip-react-native-sdk/issues"
+  },
+  "homepage": "https://rivium.co/cloud/rivium-push",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-native": "^0.72.0",
+    "react": "18.2.0",
+    "react-native": "0.73.0",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-native": ">=0.60.0"
+  }
+}

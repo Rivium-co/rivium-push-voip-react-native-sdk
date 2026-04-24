@@ -1,0 +1,22 @@
+# Build artifacts
+android/build/
+android/.gradle/
+android/.cxx/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+
+# Claude
+.claude/
+
+# Git
+.git/
+.gitignore
+
+# Logs
+*.log

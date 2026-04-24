@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="co.rivium.push.voip.reactnative">
+    <!--
+        This is a thin React Native wrapper around the native RiviumPush VoIP SDK.
+        All activities, receivers, and permissions are declared in the native SDK's AAR manifest.
+        They will be merged automatically during the build process.
+    -->
+</manifest>

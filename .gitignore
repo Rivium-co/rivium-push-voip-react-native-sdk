@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Build
+build/
+dist/
+android/build/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude
+.claude/
+
+# Credentials
+.env
+*.p8
+*.p12
+*.pem
+*.keystore
+
+# Logs
+*.log
+npm-debug.log*
