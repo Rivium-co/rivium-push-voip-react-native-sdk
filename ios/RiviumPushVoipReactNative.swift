@@ -39,6 +39,11 @@ class RiviumPushVoipReactNative: RCTEventEmitter {
     // Server URL
     private static let defaultServerUrl = "https://push-api.rivium.co"
 
+    /// SDK identity sent with the VoIP token registration.
+    /// Keep `sdkVersion` in sync with package.json.
+    static let sdkName = "react-native-voip"
+    static let sdkVersion = "0.1.1"
+
     override init() {
         super.init()
         RiviumPushVoipReactNative.instance = self
@@ -143,12 +148,15 @@ class RiviumPushVoipReactNative: RCTEventEmitter {
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.setValue(apiKey, forHTTPHeaderField: "x-api-key")
+        request.setValue("\(RiviumPushVoipReactNative.sdkName)/\(RiviumPushVoipReactNative.sdkVersion)", forHTTPHeaderField: "X-Rivium-SDK")
 
         let body: [String: Any] = [
             "deviceId": deviceId,
             "platform": "ios",
             "pushToken": token,
             "appIdentifier": appIdentifier,
+            "sdkName": RiviumPushVoipReactNative.sdkName,
+            "sdkVersion": RiviumPushVoipReactNative.sdkVersion,
         ]
         request.httpBody = try? JSONSerialization.data(withJSONObject: body)
 
