@@ -50,5 +50,5 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:${safeExtGet('kotlinVersion', '1.8.22')}"
 
     // Rivium Push VoIP SDK (Maven Central)
-    implementation 'co.rivium:rivium-push-voip:0.1.0'
+    implementation 'co.rivium:rivium-push-voip:0.1.1'
 }

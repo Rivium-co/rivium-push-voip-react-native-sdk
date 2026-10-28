@@ -80,7 +80,8 @@ class RiviumPushVoipReactNativeModule(reactContext: ReactApplicationContext) :
                 callerNameKey = configMap.getString("callerNameKey") ?: "callerName",
                 callerIdKey = configMap.getString("callerIdKey") ?: "callerId",
                 callerAvatarKey = configMap.getString("callerAvatarKey") ?: "callerAvatar",
-                callTypeKey = configMap.getString("callTypeKey") ?: "callType"
+                callTypeKey = configMap.getString("callTypeKey") ?: "callType",
+                callIdKey = configMap.getString("callIdKey") ?: "callId"
             )
 
             if (!sdkInitialized) {

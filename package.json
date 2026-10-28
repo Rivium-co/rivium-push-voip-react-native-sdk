@@ -1,6 +1,6 @@
 {
   "name": "rivium-push-react-native-voip",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "VoIP call handling for React Native with native incoming call UI (Android CallStyle, iOS CallKit)",
   "main": "src/index.ts",
   "types": "src/index.d.ts",

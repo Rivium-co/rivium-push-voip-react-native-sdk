@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.1.2] - 2026-10-29
+
+### Added
+- Android: `callIdKey` names the push field that holds the call ID (default `callId`; `callId` and `uuid` are tried after it). Uses Android VoIP SDK 0.1.1, which also no longer writes call payloads and caller names to the device log.
+
 ## [0.1.1] - 2026-10-12
 
 ### Added

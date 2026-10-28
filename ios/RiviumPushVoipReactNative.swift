@@ -42,7 +42,7 @@ class RiviumPushVoipReactNative: RCTEventEmitter {
     /// SDK identity sent with the VoIP token registration.
     /// Keep `sdkVersion` in sync with package.json.
     static let sdkName = "react-native-voip"
-    static let sdkVersion = "0.1.1"
+    static let sdkVersion = "0.1.2"
 
     override init() {
         super.init()
